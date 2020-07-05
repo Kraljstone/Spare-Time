@@ -1,0 +1,40 @@
+@import 'header';
+@import 'grid';
+@import 'variables';
+@import 'footer';
+@import 'about';
+@import 'showcase';
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size:62.5%;
+  background: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+
+li {
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
+// Navigation
+
+.nav-link {
+  color: var(--light-color) !important;
+  font-size: 1.2rem ;
+}
+  .nav-link:hover {
+    border-bottom:2px solid var(--primary-color);
+  }
+
+  
+

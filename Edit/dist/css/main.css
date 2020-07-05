@@ -1,0 +1,222 @@
+#main-header {
+  background: url(../img/george-prentzas-SRFG7iwktDk-unsplash.jpg) no-repeat center center/cover;
+  clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 100% 100%, 0 75%, 0 0);
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+#main-header * {
+  z-index: 13;
+}
+
+#main-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(to left, royalblue 5%, #222 35%);
+  opacity: 0.6;
+  z-index: 2;
+}
+
+.header-title {
+  margin: 2rem;
+}
+
+.header-title h2 {
+  font-size: 3rem;
+  color: #f4f4f4;
+  font-weight: 400;
+}
+
+.header-title p {
+  font-size: 1rem;
+  color: #f4f4f4;
+}
+
+.header-buttons {
+  display: flex;
+}
+
+.header-buttons li a {
+  font-size: 1.5rem;
+  margin: -0.5rem 1rem;
+  color: #f4f4f4;
+}
+
+.purchase {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+  margin-left: 5rem;
+}
+
+:root {
+  --primary-color:#2a446a;
+  --secondary-color:#253d5f;
+  --light-color: #f4f4f4;
+  --dark-color: #222;
+}
+
+/* Footer */
+#main-footer {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+#main-footer img {
+  width: 150px;
+}
+
+#main-footer a {
+  color: #fff;
+  font-size: 1rem;
+}
+
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+}
+
+#main-footer .footer-container > *:last-child {
+  background: #444;
+  grid-column: 1 / span 4;
+  padding: .5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#main-footer .footer-container input[type='email'] {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#main-footer .footer-container input[type='submit'] {
+  width: 90%;
+}
+
+.about {
+  height: 150vh;
+  background: url(../img/design-tools.jpg);
+}
+
+.card {
+  margin: 8rem auto;
+  max-width: 45%;
+  height: 120vh;
+  box-shadow: 9px 9px 20px 2px black;
+}
+
+.card-img-top {
+  height: 70vh;
+}
+
+.card-title {
+  font-size: 2rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%;
+  background: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+li {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  color: var(--light-color) !important;
+  font-size: 1.2rem;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.showcase {
+  background: url(../img/markus-spiske-MgtHZ4zlC1U-unsplash.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 80vh;
+  clip-path: polygon(0 0, 100% 28%, 100% 100%, 0% 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #f4f4f4;
+  position: relative;
+  z-index: 1;
+  border-bottom: 3px solid royalblue;
+}
+
+.showcase::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(to left, royalblue 5%, #222 35%);
+  opacity: 0.6;
+  z-index: 2;
+}
+
+.showcase * {
+  z-index: 3;
+}
+
+.showcase h2 {
+  font-size: 3rem;
+}
+
+.showcase p {
+  font-size: 2rem;
+  margin: 0 4rem;
+}
+
+.showcase a {
+  color: royalblue;
+  font-size: 2rem;
+  margin-top: 4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.showcase a:hover {
+  border: 1px solid royalblue;
+  text-decoration: none;
+}

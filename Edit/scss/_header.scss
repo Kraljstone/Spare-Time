@@ -1,0 +1,65 @@
+// Header Section
+
+#main-header {
+  background: url(../img/george-prentzas-SRFG7iwktDk-unsplash.jpg)no-repeat center center/cover;
+  clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 100% 100%, 0 75%, 0 0);
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+#main-header * {
+  z-index: 13;
+}
+
+#main-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  // background: rgba(0,0,0,0.5);
+  background: linear-gradient(to left, royalblue 5%, #222 35%,);
+  opacity: 0.6;
+  z-index: 2;
+}
+
+.header-title {
+  margin: 2rem;
+
+
+}
+
+.header-title h2 {
+  font-size: 3rem;
+  color: #f4f4f4;
+  font-weight: 400;
+}
+
+.header-title p {
+  font-size: 1rem;
+  color: #f4f4f4;
+}
+
+.header-buttons {
+  display: flex;
+}
+
+.header-buttons li a {
+ font-size: 1.5rem;
+ margin: -0.5rem 1rem;
+ color: #f4f4f4;
+
+}
+
+.purchase {
+  background-color: rgba(0,0,0,0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
